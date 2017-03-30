@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  npm-cache:
+    build: .
+    volumes:
+    - cache-data:/cache-data
+    ports:
+    - "3128:3128"
+    restart: always
+volumes:
+  cache-data: {}
+
